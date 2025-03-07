@@ -1,0 +1,19 @@
+.one{
+    color: red;
+}
+.two{
+    color: blue;
+}
+p{
+    color: brown;
+}
+
+#one{
+    color: aqua;
+}
+#two{
+    color: yellowgreen;
+}
+*{
+    background-color: blueviolet;
+}
