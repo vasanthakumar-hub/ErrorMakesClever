@@ -1,0 +1,35 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    .container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .one{
+        background-color: greenyellow;
+        margin: 5px;
+        height: 100px;
+        flex-basis: 20%;
+    }
+
+    @media screen and (max-width:800px){
+        .one{
+            flex-basis: 40% ;
+        }
+    }
+
+    @media screen and (max-width:600px){
+        .one{
+            flex-basis: 100% ;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="one"></div>
+    <div class="one"></div>
+    <div class="one"></div>
+    <div class="one"></div>
+</div>
