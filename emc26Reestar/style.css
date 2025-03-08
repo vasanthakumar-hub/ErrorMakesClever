@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    padding-left: 5px;
+}
+.header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+ul{
+    color: gray;
+    cursor: pointer;
+}
+li:hover{
+    background-color: white;
+    color: black;
+}
+nav,ul,li{
+    display: inline;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-left: -5px;
+}
+.box{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    width: 220px;
+}
+.receipes{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
