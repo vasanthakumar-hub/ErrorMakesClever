@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Hello World</h1>
+    <button onclick="change()">Change</button> 
+    <!--onclick is an Event Handler , clicking keybord buttons,moving mouse are all events in a webpage-->
+
+    <script>
+        var h1=document.getElementById("head")
+        console.log(h1.textContent)
+
+        function change()
+        {
+            h1.textContent="Bye World"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!-- DOM Manipulation -->
+<p id="one">
+    Hello
+</p>
+
+<script>
+    //Select Paragraph tag Using id
+
+    var para = document.getElementById("one");
+    //console.log(para) to view full element
+    console.log(para.textContent) //to view only text in that element
+    para.textContent = "Bye" //Now Hello is Changed to Bye in Paragraph tag
+</script>
