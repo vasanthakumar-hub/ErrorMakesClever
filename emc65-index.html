@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Manipulation using Javascript</title>
+</head>
+
+<body>
+    <style>
+        #box {
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            transition: 2s;
+        }
+
+        .widthmax {
+            width: 900px;
+        }
+    </style>
+    <div id="box"></div>
+    <button onclick="change()" style="margin: 5px;">Change Colour</button>
+
+    <script>
+
+        //selecting box
+        var box = document.getElementById("box")
+
+        function change() {
+            box.style.backgroundColor = "red"
+            //box.setAttribute("class","widthmax")  // class="widthmax" is manipulated and added in div
+            box.style.width = "900px" // can't find what is the error here so i use this line of code
+        }
+    </script>
+
+</body>
+
+</html>
