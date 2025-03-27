@@ -1,0 +1,17 @@
+<div class="one">Hello</div>
+<div class="one">Vasantha</div>
+<div class="one">Kumar</div>
+<div class="one">R</div>
+
+<script>
+    //selecting div
+    var div = document.querySelectorAll(".one") // .one to select class
+    //div,id,class & tags are selecting using query selector
+    //queyselector takes only one element which matches first
+    // //queryselectorAll takes all the elements which matches
+
+    for (count = 0; count < div.length; count = count + 1) 
+    {
+        console.log(div[count].textContent)
+    }
+</script>
