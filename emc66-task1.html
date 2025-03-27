@@ -1,0 +1,19 @@
+
+<input id="inputbox" type="text" onkeyup="update()">
+<!-- <button onclick="update()">Button</button> -->
+<h1 id="result"></h1>
+
+<script>
+    //select input tag
+    //select h1 tag
+    var inputbox = document.getElementById("inputbox")
+    var result = document.getElementById("result")
+
+    function update(){
+        result.textContent = inputbox.value
+    }
+</script>
+
+<!-- Note:
+    1.onkeyup is used to call a function whenever we press a key on a keyboard.
+    2.onclick is used to call a function when we click a button/object. -->

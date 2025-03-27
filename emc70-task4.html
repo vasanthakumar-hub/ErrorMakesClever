@@ -1,0 +1,18 @@
+<h1 id="result">Name</h1>
+<button onclick="update(event)">John</button>
+<button onclick="update(event)">Praveen</button>
+<button onclick="update(event)">Karthick</button> 
+
+<script>
+    //select h1
+    var h1 = document.getElementById("result")
+
+    function update(event)
+    {
+        h1.textContent = event.target.textContent //selects the text content present inside the button
+    }
+</script>
+
+<!-- Note:
+    1.event is used to select the button clicked.
+    2.event.target selects the whole button. -->

@@ -1,0 +1,12 @@
+<button onclick="update()">Add</button>
+<h1 id="result"></h1>
+
+<script>
+    //select h1
+    var h1=document.getElementById("result")
+    function update()
+    {
+        //h1.textContent = "Hello" //hello is added only one time
+        h1.append("Hello") //Hello is added multiple times inside h1 tag
+    }
+</script>
