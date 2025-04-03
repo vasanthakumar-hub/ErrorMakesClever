@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <input id="input" type="text">
+
+    <button onclick="add()">Add</button>
+
+    <ul id="list-container">
+        <li>
+            Hello
+            <button onclick="deleteItem()">Delete</button>
+        </li>
+    </ul>
+
+    <script>
+        //selecting ul
+        var ul = document.getElementById("list-container")
+        var input = document.getElementById("input")
+
+        function add()
+        {
+            var listitem = document.createElement("li")
+            listitem.innerHTML= input.value + "<button onclick='deleteItem(event)'>Delete</button>" // to get inputs from inupt tag we use .value
+            ul.append(listitem)
+        }
+
+        function deleteItem()
+        {
+            event.target.parentElement.remove()
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task To Be Done Later</title>
+</head>
+<body>
+    
+    <form id="form">
+        <table id="table">
+            <tr>
+                <td>Name</td> <td><input type="text" id="name"></td>
+            </tr>
+
+            <tr>
+                <td>Age</td> <td><input type="number" id="age"></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td> <td><input type="radio" name="Gender">Male <input type="radio" name="Gender">Female </td>
+            </tr>
+
+            <tr>
+                <td>Course</td> 
+                
+                <td>
+                    <select>
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>.NET</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td> <td><input type="email"></td>
+            </tr>
+        </table>
+
+        <tr>
+            <button onclick="add()">Add</button>
+        </tr>
+    </form>
+
+    <table id="tabledata">
+        <tr>
+            <th>Name</th>
+        </tr>
+
+    </table>
+
+    <script>
+        var name = document.getElementById("name")
+        var table = document.getElementById("tabledata")
+        
+        function add()
+        {
+         var tablerow = document.createElement("tr")
+         tablerow.innerHTML = name.value
+         table.append(tablerow)
+        }
+        
+    </script>
+    
+</body>
+</html>
