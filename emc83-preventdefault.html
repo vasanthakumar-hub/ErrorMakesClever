@@ -1,0 +1,11 @@
+<form action="https://www.google.com/">  <!--Button when clicked it enters into action by default and here it will load google webpage-->
+    <input type="text">
+    <button type="submit" onclick="def(event)">Click</button>
+</form>
+
+<script>
+    function def(event)
+    {
+        event.preventDefault() // this stops this page redirecting to google webpage by default action
+    }
+</script>
