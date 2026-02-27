@@ -27,6 +27,7 @@ button{
     color: white;
     padding: 5px;
     margin-left: -5px;
+    cursor: pointer;
 }
 .box{
     border-color: black;
