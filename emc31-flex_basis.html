@@ -11,17 +11,24 @@
         background-color: greenyellow;
         margin: 5px;
         height: 100px;
+        flex-basis: 100%;
+    }
+
+    .two{
+        background-color: brown;
+        margin: 5px;
+        height: 100px;
         flex-basis: 20%;
     }
 
     @media screen and (max-width:800px){
-        .one{
-            flex-basis: 40% ;
+        .two{
+            flex-basis: 100% ;
         }
     }
 
     @media screen and (max-width:600px){
-        .one{
+        .two{
             flex-basis: 100% ;
         }
     }
@@ -29,7 +36,7 @@
 
 <div class="container">
     <div class="one"></div>
-    <div class="one"></div>
-    <div class="one"></div>
-    <div class="one"></div>
+    <div class="two"></div>
+    <div class="two"></div>
+    <div class="two"></div>
 </div>

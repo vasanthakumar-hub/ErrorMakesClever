@@ -26,3 +26,4 @@ oppo()
 
 // To Run This Code in Your Terminal Enter node nameofprogram (node emc44-function.js)
 // Function can be called many times and can be called in any order.
+// cd ErrorMakesClever to move into this directory in a terminal
